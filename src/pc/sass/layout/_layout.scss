@@ -1,0 +1,78 @@
+.clearfix {
+    *zoom: 1;
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+body {
+    position: absolute;
+    background: url("/images/bg.png") bottom;
+    background-size: cover;
+    width: 100%;
+    min-width: 1100px;
+    height: 100%;
+    min-height: 650px;
+    color: #d0d0d0;
+    font-size: 13px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.l-header {
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #2F9729;
+    width: 100%;
+    height: 100px;
+}
+
+.l-pain {
+    float: left;
+    width: 33.333333%;
+    height: 99px;
+    padding: 5px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+        border-right: 1px dashed #2F9729;
+    }
+}
+
+.l-sidebar {
+    float: left;
+    position: absolute;
+    border-right: 1px dashed #6b6b68;
+    width: 180px;
+    height: calc(96% - 100px);
+    padding: 5px;
+    font-size: 12px;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.l-contents {
+    position: absolute;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: calc(96% - 100px);
+    padding: 5px;
+    padding-left: 180px;
+    top: 100px;
+    right: 0;
+}
+
+.l-footer {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    bottom: 0;
+}
+
